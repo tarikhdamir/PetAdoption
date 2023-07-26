@@ -1,0 +1,9 @@
+﻿
+<div class="row mb-2 mt-5">
+    @{
+        foreach (Pet pet in Model)
+        {
+            @Html.Partial("AllPets", pet);
+        }
+    }
+</div>

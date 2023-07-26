@@ -1,0 +1,10 @@
+﻿@using PetAdoption.Data.Models;
+@model Pet
+
+<div class="col-lg-4">
+    <img class="img-thumbnail" src="@Model.Img" alt="@Model.Name" />
+    <h2>@Model.Name</h2>
+    <p>@Model.Species.SpeciesName</p>
+    <p><a class="btn btn-warning" asp-controller="User" asp-route-petId="@Model.Id">More</a></p>
+</div>
+
